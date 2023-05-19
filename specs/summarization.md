@@ -10,7 +10,13 @@ run cosine similarity search on it
 
 ## implementation ideas 
 
-could be done as a single typescript file in a codebase that does the above items some could run as `ts-node code-search.ts` on a few sample queries to see if it works
+possibly could be done as a single typescript file in a codebase 
 
-great to do on a larger codebase
+has the logic for everything in "proof of concept"
+
+runs through 5-10 queries as test cases on the search
+
+user can just run `ts-node code-search.ts` to see if it works
+
+would be great to do on a larger codebase
 
