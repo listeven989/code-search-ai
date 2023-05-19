@@ -1,4 +1,4 @@
-proof of concept:
+## proof of concept:
 
 summarize each file
 
@@ -8,7 +8,9 @@ store the summarizations into a json
 
 run cosine similarity search on it
 
-------
+## implementation ideas 
 
-probably can just be done as a single typescript file in a codebase that does something like
+could be done as a single typescript file in a codebase that does the above items some could run as `ts-node code-search.ts` on a few sample queries to see if it works
+
+great to do on a larger codebase
 
