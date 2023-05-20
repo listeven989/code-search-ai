@@ -1,4 +1,4 @@
-# human
+## human
 
 ```md
 proof of concept:
@@ -28,7 +28,7 @@ the reason typescript might not be ideal is because it'd require installing npm 
 
 what are some other options? a modal runtime software? or something else?
 
-# chat
+## chat
 
 Based on your requirements, I suggest using a standalone Python script. Python is a versatile language with a rich ecosystem of libraries, and it's easy to set up and run on most systems. You can use the following libraries for your proof of concept:
 
@@ -57,12 +57,12 @@ def store_summarizations(summarizations, output_file):
         json.dump(summar...
 ```
   
-# human
+## human
 
 but itd still install these python packages into the repo though right? what if its a node repo? or a golang repo? i don't want a bunch of 
 python packages in there
 
-# human
+## human
 
 ```
 import sys
@@ -282,13 +282,13 @@ def clean_dir(directory):
 
 how about using modal (self provisioning runtime?)
 
-# chat
+## chat
 
 Yes, using Modal is a great choice for your use case. Modal is a self-provisioning runtime that allows you to run code in isolated environments, which means you won't have to worry about installing dependencies in your main project repository. The code you provided is a good example of how to use Modal to generate code based on user input and OpenAI API.
 
 With Modal, you can create a standalone script that runs in an isolated environment, and you can use it with any project, regardless of whether it's a Node.js, Golang, or any other type of project. The dependencies will be installed and managed within the Modal environment, keeping your main project clean and free of unnecessary packages.
 
-# chat
+## chat
 
 Here's the reworked Python script using Modal. Save this as `code_search_modal.py`:
 
@@ -383,3 +383,5 @@ modal run code-search-modal.main
 ```
 
 By using Modal, you can run the code search script within the root of a large codebase without installing any dependencies directly in the codebase. The dependencies will be managed within the Modal environment.
+
+https://github.com/smol-ai/developer/blob/main/main.py
