@@ -7,28 +7,18 @@ if [ -z "$1" ]; then
 fi
 
 # Find the closest matching file
-file_path=$(find . -type f -iname "*$1*" | head -n 1)
+file_path=$(find . -type f -iname "*$1*" | awk 'NR==1')
 
 # Check if the file name or file path includes the argument $1
 if [ -z "$file_path" ] || [[ ! "$file_path" =~ .*"$1".* ]]; then
   echo "No matching file found."
   exit 1
-fi
-
-# Print and format the file contents
-echo "```"
-echo "// $file_path"
-echo ""
-cat "$file_path"
-echo "```"
-
-# Copy the contents to the clipboard
-formatted_contents=$(echo "```"; echo "// $file_path"; echo ""; cat "$file_path"; echo "```")
-
-if [ "$(uname)" == "Darwin" ]; then
-  echo "$formatted_contents" | pbcopy
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-  echo "$formatted_contents" | xclip -selection clipboard
 else
-  echo "Clipboard copy not supported on this platform."
+  echo "File path found: $file_path"
+  
+  # Copy the file contents to the clipboard
+  cat "$file_path" | pbcopy
+  
+  # Print the file contents in the terminal
+  cat "$file_path"
 fi
