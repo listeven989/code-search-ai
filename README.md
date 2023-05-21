@@ -1,4 +1,4 @@
-# LLM Code Search
+# AI Code Search
 
 Repo to explore code search in the AI-first era
 
