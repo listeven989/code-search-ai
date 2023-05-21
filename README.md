@@ -8,9 +8,9 @@ contains ideas for implementation strategies, use cases, test cases, and more
 
 `/chatcraft.org` 
 
-using [chatcraft.org's open sourced project](https://github.com/tarasglek/chatcraft.org) as a test repo for applying some of the ideas in `/specs`
+tested some of the code search ideas to make features for [chatcraft.org's open sourced project](https://github.com/tarasglek/chatcraft.org)
 
-contains some of the early prompts, bash scripts and other code to explore code search. the prompts, utils, etc where utilized to quickly add features to chatcraft.org
+contains some of the early prompts, bash scripts and other code to explore code search. 
 
 demo:
 
