@@ -1,10 +1,10 @@
 # AI Code Search
 
-Repo to explore code search in the AI-first era
+Repo to explore new approaches to code search
 
 `/specs` 
 
-contains ideas for implementation strategies, use cases, test cases, and more
+contains ideas, implementation strategies, use cases, test cases, and more
 
 `/chatcraft.org` 
 
