@@ -8,11 +8,11 @@ contains ideas, implementation strategies, use cases, test cases, and more
 
 `/chatcraft.org` 
 
-tested some of the code search ideas to make a feature for [chatcraft.org's open sourced project](https://github.com/tarasglek/chatcraft.org), contains:
+tested some of the code search ideas using chatcraft.org, contains:
 
-- script to generate a mermaid chart of the full codebase & files
-- prompt to tell gpt to navigate to the correct files given a query & mermaid chart
-- script to copy/format/truncate code files to feed back to gpt
+- script to generate a mermaid chart of the full codebase & files, this is fed back to chatcraft to be used in prompts
+- gpt prompt to tell gpt to navigate to the correct files given a query & mermaid chart
+- script to copy/format/truncate code files to copy/paste into chatcraft
 
 demo:
 
