@@ -1,6 +1,6 @@
 # AI Code Search
 
-Repo to explore new approaches to code search
+Repo to explore approaches to code search
 
 `/specs` 
 
@@ -8,9 +8,11 @@ contains ideas, implementation strategies, use cases, test cases, and more
 
 `/chatcraft.org` 
 
-tested some of the code search ideas to make some features for [chatcraft.org's open sourced project](https://github.com/tarasglek/chatcraft.org)
+tested some of the code search ideas to make a feature for [chatcraft.org's open sourced project](https://github.com/tarasglek/chatcraft.org), contains:
 
-contains a few prompts, bash scripts and other code to implement a AI-driven code exploration/search flow
+- script to generate a mermaid chart of the full codebase & files
+- prompt to tell gpt to navigate to the correct files given a query & mermaid chart
+- script to copy/format/truncate code files to feed back to gpt
 
 demo:
 
