@@ -16,6 +16,10 @@ tree -fi --noreport -I 'node_modules|.*|*.json|*build*|*dist*|public|assets|*con
     child=$(basename "$line")
     parent_id="${parent//\//-}"
     child_id="${parent//\//-}-${child//\//-}"
+    parent_id="${parent_id//./_}"
+    child_id="${child_id//./_}"
+    parent_id="${parent_id//-/_}"
+    child_id="${child_id//-/_}"
     echo "${parent_id}[${parent}] --> ${child_id}[${child}]" >> $OUTPUT_FILE
   fi
 done
